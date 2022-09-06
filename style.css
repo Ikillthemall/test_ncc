@@ -132,3 +132,85 @@ html {
     font-size: 14px;
     line-height: 60px;
 }
+
+/* for mobile */
+@media (max-width: 730px) {
+    .row {
+        margin-right: 0;
+    }
+    .content-wrapper {
+        padding: 8px;
+    }
+    .content-top {
+        padding: 2rem;
+    }
+    .content-top > p {
+        text-align: center;
+    }
+    .main-panel {
+        margin-left: 0;
+        width: 100%;
+    }
+    .content-images > .heading-image {
+        width: 150px;
+        height: 120px;
+    }
+
+   .box {
+        margin-top: 15px;
+   }
+   .box > .box-heading {
+        text-align: center;
+   }
+   .box-body > img {
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        float: none;
+   }
+
+   .hide-sidebar {
+        display: none;
+   }
+}
+
+/* For Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .row {
+        margin-right: 0;
+    }
+    .content-wrapper {
+        padding: 8px;
+    }
+    .content-top {
+        padding: 2rem;
+    }
+    .content-top > p {
+        text-align: center;
+    }
+    .main-panel {
+        margin-left: 0;
+        width: 100%;
+    }
+    .content-images > .heading-image {
+        width: 150px;
+        height: 120px;
+    }
+
+   .box {
+        margin-top: 15px;
+   }
+   .box > .box-heading {
+        text-align: center;
+   }
+   .box-body > img {
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        float: none;
+   }
+   .hide-sidebar {
+        display: none;
+   }
+}
