@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+a, li ,ul {
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+.wrapper {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+}
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sidebar {
+    width: 20rem;
+    padding: 0;
+    background-color: #111;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-item {
+    margin-top: 6px;
+    color: #fff;
+}
+.nav-item > a {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    transition-duration: 0.45s;
+    transition-property: color;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 1px solid #333;
+}
+.nav-item > a:hover {   
+    background-color: red;
+}
+.main-panel {
+    width: calc(100% - 20rem);
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper{
+    background: #F5F7FF;
+    padding: 3rem 3rem 3rem 6rem;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.content-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-images > .heading-image {
+    width: 400px;
+    height: 200px;
+}
+
+.content-top {
+    margin-top: 30px;
+    background-color: #EFEFEF;
+    padding: 4rem 20rem;
+    font-size: 14px;
+}
+.content-top > h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content-top > p {
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.content-body {
+    margin-top: 30px;
+}
+.box > .box-heading {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.box-body > img {
+    width: 120px;
+    height: 120px;
+    float: left;
+    padding-right: 8px;
+}
+.box-body {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 2rem;
+}
+.footer {
+    background-color: #E9E9E9;
+    text-align: center;
+    height: 60px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 60px;
+}
