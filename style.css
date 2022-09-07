@@ -132,6 +132,13 @@ html {
     font-size: 14px;
     line-height: 60px;
 }
+#header-bars-input {
+    display: none;
+}
+.sidebar-mobile,
+.menu-btn {
+    display: none;
+}
 
 /* for mobile */
 @media (max-width: 730px) {
@@ -172,6 +179,89 @@ html {
    .hide-sidebar {
         display: none;
    }
+   .sidebar-mobile,
+    .menu-btn {
+        display: block;
+    }
+    .menu-btn {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+    }
+
+    .fa.fa-bars {
+        font-size: 2.6rem;
+    }
+    .nav-mobile-menu {
+        padding: 1rem 2rem;
+    }
+    .nav-mobile-menu > li:first-child {
+       padding-top: 5px;
+       padding-bottom: 2rem;
+    }
+
+    .nav-mobile-menu > li:not(:first-child) {
+        padding: 2rem 0;
+    }
+
+    .nav-mobile-menu > li > a {
+        font-size: 1.4rem;
+        color: var(--text-color);
+        cursor: pointer;
+    }
+    .nav-mobile-menu > li > a:hover {
+        color: red
+    }
+    .modal {
+        z-index: 20;
+        /* display: none; */
+        display: flex;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    .header__bars-input {
+        display: none;
+    }
+    .header__bars-input:checked~.modal {
+        display: block;
+    }
+
+    .sidebar-mobile {
+        /* position: relative; */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 36%;
+        min-height: 100%;
+        background-color: var(--white-color);
+        z-index: 25;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform linear 0.2s, opacity linear 0.2s;
+    }
+    .sidebar-mobile-X {
+        position: absolute;
+        top: 10px;
+        right: 8px;
+        cursor: pointer;
+    }
+    .sidebar-mobile-X:hover {
+        color: #222;
+    }
+    .header__bars-input:checked~.sidebar-mobile {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .sidebar-mobile-X::before {
+        font-size: 2rem;
+    }
+    .header__bars-input {
+        display: none;
+    }
 }
 
 /* For Tablet */
